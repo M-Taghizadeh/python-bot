@@ -7,7 +7,7 @@ CHANNEL_ID = '@ai_news_farsi'
 @bot.message_handler(commands=['send_text'])
 def send_text_to_channel(message):
     try:
-        text_to_send = message.text.replace('/send_text', '').strip()
+        text_to_send = message.text.replace('/send_text', 'saaaaaaaaaalaaaaaaaaaaaaam').strip()
         bot.send_message(CHANNEL_ID, text_to_send)
         bot.reply_to(message, 'متن با موفقیت در کانال ارسال شد.')
     except Exception as e:
